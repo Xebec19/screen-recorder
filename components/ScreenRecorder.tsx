@@ -3,7 +3,7 @@
 import { useState, useRef, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { AlertCircle, Download } from "lucide-react";
+import { AlertCircle, Download, Pause, Play } from "lucide-react";
 
 export default function ScreenRecorder() {
   const [isRecording, setIsRecording] = useState(false);
@@ -91,9 +91,11 @@ export default function ScreenRecorder() {
     <div className="flex flex-col items-center space-y-4">
       <div className="space-x-4">
         <Button onClick={startRecording} disabled={isRecording}>
+          <Play className="size-4 mr-1" />
           Start Recording
         </Button>
         <Button onClick={stopRecording} disabled={!isRecording}>
+          <Pause className="size-4 mr-1" />
           Stop Recording
         </Button>
       </div>
