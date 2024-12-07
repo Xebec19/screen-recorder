@@ -81,7 +81,8 @@ export default function ScreenRecorder() {
     if (videoURL) {
       const a = document.createElement("a");
       a.href = videoURL;
-      a.download = "screen-recording.webm";
+      const timestamp = new Date().getTime().toString();
+      a.download = `screen-recording-${timestamp}.webm`;
       a.click();
     }
   }, [videoURL]);
