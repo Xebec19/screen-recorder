@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     images: {
       url: "https://ik.imagekit.io/n8rtlkdw8/screen-recorder/screen-recorder-og.png?updatedAt=1733557282285",
     },
-    url: "https://sound-recorder.rohankumarthakur.co.in/",
+    url: "https://screen-recorder.rohankumarthakur.co.in/",
   },
   twitter: {
     card: "summary_large_image",
